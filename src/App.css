@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.App{
+    /* background-image: url('./pexels-miguel-á-padriñán-1111368.jpg'); */
+    height: 100vh;
+    overflow: hidden;
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.userImg {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.userImgModal {
+  height: 90%;
+  width: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.userImgChat {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.userImgSearch{
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.li-hover:hover{
+  background-color: #0d6efd!important;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+::-webkit-scrollbar {
+  width: 0px;
 }
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { 
+  background: #555;
+} 
