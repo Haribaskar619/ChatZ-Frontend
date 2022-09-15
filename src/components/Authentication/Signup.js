@@ -32,7 +32,7 @@ function Signup() {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/user",
+        process.env.REACT_APP_BASE_URL+"/api/user",
         {
           name,
           email,

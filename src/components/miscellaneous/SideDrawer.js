@@ -53,7 +53,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        process.env.REACT_APP_BASE_URL+`/api/user?search=${search}`,
         config
       );
       console.log("after req", loading);
@@ -79,7 +79,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:5000/api/chat`,
+        process.env.REACT_APP_BASE_URL+`/api/chat`,
         { userId },
         config
       );

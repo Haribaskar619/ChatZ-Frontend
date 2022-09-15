@@ -28,7 +28,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        process.env.REACT_APP_BASE_URL+`/api/user?search=${search}`,
         config
       );
       console.log(data);
@@ -51,7 +51,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/chat/rename`,
+        process.env.REACT_APP_BASE_URL+`/api/chat/rename`,
         {
           chatId: selectedChat._id,
           chatName: groupChatName,
@@ -90,7 +90,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/chat/groupadd`,
+        process.env.REACT_APP_BASE_URL+`/api/chat/groupadd`,
         {
           chatId: selectedChat._id,
           userId: user1._id,
@@ -122,7 +122,7 @@ const UpdateGroupChatModal = ({ fetchMessages, fetchAgain, setFetchAgain }) => {
         },
       };
       const { data } = await axios.put(
-        `http://localhost:5000/api/chat/groupremove`,
+        process.env.REACT_APP_BASE_URL+`/api/chat/groupremove`,
         {
           chatId: selectedChat._id,
           userId: user1._id,
