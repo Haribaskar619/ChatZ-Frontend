@@ -5,7 +5,6 @@ import Chatpage from "./Pages/Chatpage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
@@ -19,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
