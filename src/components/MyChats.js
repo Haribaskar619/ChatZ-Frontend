@@ -24,7 +24,7 @@ const MyChats = ({ fetchAgain }) => {
         };
 
         const { data } = await axios.get(
-        "https://hidden-inlet-68415.herokuapp.com:5000/api/chat",
+        "https://hidden-inlet-68415.herokuapp.com/api/chat",
           config
         );
         setChats(data);
